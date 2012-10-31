@@ -6,16 +6,13 @@
 * Yahoo API. Yahoo has very good APIs and it should be sad forget on them,
 * when everybody speaks only about google stuffs.
 *
-* @Version:		1.1
+* @Version:		2.0
 * @Release:		2010-12-22
 * @Author:		Ondrej Podolinsky aka podolinek
 * @Contact:		podolinek@gmail.com
 *
 * Copyright (c) 2010, podolinek
-* This class is under GPL Licencense Agreement.
-*
-* I will be pleased for any feedback.)
-*
+* This class is under MIT Licencense Agreement.
 */
 require('GeoLocator.class.php');
 require('YahooGeoLocator.class.php');
