@@ -4,19 +4,16 @@
 * GoogleGeoLocator.class.php
 *
 * About class: Class for parsing data from google geo service. I think google
-* has the best geo database of all, unfortunatelly it has limit 2 500 queries
-* per day if you don't have special API key (I dont think api key for js API:).
-* More info about google maps api: http://code.google.com/intl/en/apis/maps/documentation/geocoding/
+* has the best geo database of all, up to 100 000 request per day.
+* More info about google maps api: https://developers.google.com/maps/documentation/geocoding/?hl=en
 *
 * @Version:	1.1
 * @Release:	2010-12-22
 * @Author:	Ondrej Podolinsky aka podolinek
 * @Contact:	podolinek@gmail.com
 *
-* Copyright (c) 2010, podolinek
+* Copyright (c) 2010-2013, podolinek
 * This class is under GPL Licencense Agreement.
-*
-* I will be pleased for any feedback.)
 *
 */
 class GoogleGeoLocator extends GeoLocator {
