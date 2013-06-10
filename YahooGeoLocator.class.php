@@ -9,19 +9,19 @@
 * unfortunatelly google is more:-/
 * More info about Yahoo APIs on YDN: http://developer.yahoo.com/everything.html
 *
-* @Version:		1.1
+* @Version:		1.2
 * @Release:		2010-12-22
 * @Author:		Ondrej Podolinsky aka podolinek
 * @Contact:		podolinek@gmail.com
 *
-* Copyright (c) 2010, podolinek
+* Copyright (c) 2010-2013, podolinek
 * This class is under GPL Licencense Agreement.
 *
 * I will be pleased for any feedback.)
 *
 */
 class YahooGeoLocator extends GeoLocator {
-	const serviceAddress = 'http://where.yahooapis.com/geocode?location=%s&flags=P';//address for calling service
+	const serviceAddress = 'http://where.yahooapis.com/geocode?location=%s&flags=PJ';//address for calling service
 
 	/**
 	* Initial set of base variables in class
