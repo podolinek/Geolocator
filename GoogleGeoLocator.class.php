@@ -3,8 +3,8 @@
 * Geo Locator
 * GoogleGeoLocator.class.php
 *
-* About class: Class for parsing data from google geo service. I think google
-* has the best geo database of all, up to 100 000 request per day.
+* About class: Class for parsing data from google geo service. Free google developer account
+* supports up to 2500 requests per day.
 * More info about google maps api: https://developers.google.com/maps/documentation/geocoding/?hl=en
 *
 * @Version:	1.2
