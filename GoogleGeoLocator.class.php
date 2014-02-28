@@ -7,17 +7,16 @@
 * has the best geo database of all, up to 100 000 request per day.
 * More info about google maps api: https://developers.google.com/maps/documentation/geocoding/?hl=en
 *
-* @Version:	1.1
-* @Release:	2010-12-22
+* @Version:	1.2
 * @Author:	Ondrej Podolinsky aka podolinek
 * @Contact:	podolinek@gmail.com
 *
-* Copyright (c) 2010-2013, podolinek
+* Copyright (c) 2010-2014, podolinek
 * This class is under GPL Licencense Agreement.
 *
 */
 class GoogleGeoLocator extends GeoLocator {
-	const serviceAddress = 'http://maps.google.com/maps/api/geocode/json?%s=%s&sensor=false&language=%s';//address for calling service
+	const serviceAddress = 'https://maps.googleapis.com/maps/api/geocode/json?%s=%s&sensor=false&language=%s';//address for calling service
 	protected $language;//language for results from google
 
 	/**
