@@ -23,8 +23,8 @@ class GoogleGeoLocator extends GeoLocator {
 	/**
 	* Initial set of base variables in class
 	*
-	* @param string $lang - langugage for results from google
 	* @param string $apiKey - api key for Google API
+	* @param string $lang - langugage for results from google
 	*/
 	public function __construct($apiKey = null,$lang = 'en') {
 		parent::__construct($apiKey);
