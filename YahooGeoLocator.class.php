@@ -1,22 +1,18 @@
 <?php
 /*
-* Geo Locator
-* YahooGeoLocator.class.php
-*
-* About class: Class for parsing data from payed Yahoo BOSS Geo Service.
+* Parsing data from payed Yahoo BOSS Geo Service.
 * More info about Yahoo APIs on http://developer.yahoo.com/boss/geo
 *
-* @Version:		1.2
-* @Release:		2010-12-22
-* @Author:		Ondrej Podolinsky aka podolinek
+* @Version:		2.1
+* @Author:		Ondrej Podolinsky
 * @Contact:		podolinek@gmail.com
-*
-* Copyright (c) 2010-2013, podolinek
-* This class is under GPL Licencense Agreement.
-*
 */
 class YahooGeoLocator extends GeoLocator {
-	const serviceAddress = 'http://where.yahooapis.com/geocode?location=%s&flags=J';//address for calling service
+
+	/**
+	* Address for calling service
+	*/
+	const serviceAddress = 'http://where.yahooapis.com/geocode?location=%s&flags=J';
 
 	/**
 	* Initial set of base variables in class
@@ -74,4 +70,3 @@ class YahooGeoLocator extends GeoLocator {
 		return $result;
 	}
 }
-?>

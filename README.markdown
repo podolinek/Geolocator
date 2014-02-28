@@ -45,8 +45,12 @@ $service->searchByLocation('50.073274','14.392619');
 
 Version
 -------
-2.0
+2.1
+
+Copyright
+---------
+2010-2014
 
 License
 -------
-MIT
+GPL

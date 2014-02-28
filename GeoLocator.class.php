@@ -1,22 +1,17 @@
 <?php
 /*
-* Geo Locator
-* GeoLocator.class.php
-* About class: abstract class with defined all methods used in extended classes for gps services.
+* Definition of all methods used in extended classes for gps services.
 *
-* @Version:	1.1
-* @Release:	2010-12-22
-* @Author:	Ondrej Podolinsky aka podolinek
+* @Version:	2.1
+* @Author:	Ondrej Podolinsky
 * @Contact:	podolinek@gmail.com
-*
-* Copyright (c) 2010, podolinek
-* This class is under GPL Licencense Agreement.
-*
-* I will be pleased for any feedback.)
-*
 */
 abstract class GeoLocator{
-	protected $apiKey;//api key for services, if it is available
+
+	/**
+	* Api key for services, if it is available
+	*/
+	protected $apiKey;
 
 	/**
 	* Initial set of base variables in class
@@ -101,4 +96,3 @@ abstract class GeoLocator{
 	*/
 	abstract protected function parseResults($arr);
 }
-?>

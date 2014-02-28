@@ -1,23 +1,24 @@
 <?php
 /*
-* Geo Locator
-* GoogleGeoLocator.class.php
-*
-* About class: Class for parsing data from google geo service. Free google developer account
+* Parsing data from google geo service. Free google developer account
 * supports up to 2500 requests per day.
 * More info about google maps api: https://developers.google.com/maps/documentation/geocoding/?hl=en
 *
-* @Version:	1.2
-* @Author:	Ondrej Podolinsky aka podolinek
+* @Version:	2.1
+* @Author:	Ondrej Podolinsky
 * @Contact:	podolinek@gmail.com
-*
-* Copyright (c) 2010-2014, podolinek
-* This class is under GPL Licencense Agreement.
-*
 */
 class GoogleGeoLocator extends GeoLocator {
-	const serviceAddress = 'https://maps.googleapis.com/maps/api/geocode/json?%s=%s&sensor=false&language=%s';//address for calling service
-	protected $language;//language for results from google
+	
+	/**
+	* Address for calling service
+	*/
+	const serviceAddress = 'https://maps.googleapis.com/maps/api/geocode/json?%s=%s&sensor=false&language=%s';
+
+	/**
+	* Language for results from google
+	*/
+	protected $language;
 
 	/**
 	* Initial set of base variables in class
@@ -43,14 +44,14 @@ class GoogleGeoLocator extends GeoLocator {
 			$url .= '&client=' . $this->apiKey;
 
         $file = $this->getUrl($url);
-		$doc = json_decode($file);//data gets in json format
+		$doc = json_decode($file);
 
 		$status = (string)$doc->status;
 
 		if($status == 'OK') {
 			$i = 0;
 			$street = $route = $locality = false;
-			foreach($doc->results as $res) {//search for density in result
+			foreach($doc->results as $res) {
 				if($res->types[0] == 'street_address')
 					$street = true;
 			    elseif($res->types[0] == 'route')
@@ -109,4 +110,3 @@ class GoogleGeoLocator extends GeoLocator {
 		return $result;
 	}
 }
-?>

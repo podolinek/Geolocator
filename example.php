@@ -6,18 +6,10 @@
 * Yahoo API. Yahoo has very good APIs and it should be sad forget on them,
 * when everybody speaks only about google stuffs.
 *
-* @Version:		2.0
-* @Release:		2010-12-22
-* @Author:		Ondrej Podolinsky aka podolinek
-* @Contact:		podolinek@gmail.com
-*
-* Copyright (c) 2010, podolinek
-* This class is under MIT Licencense Agreement.
 */
 require('GeoLocator.class.php');
 require('YahooGeoLocator.class.php');
 require('GoogleGeoLocator.class.php');
-
 
 $yahooApiKey = '';
 $googleApiKey= '';
@@ -36,10 +28,10 @@ $google = new GoogleGeoLocator($googleApiKey,$lang);
 <p><strong>Search by Yahoo PlaceFinder API service:</strong></p>
 <pre>Search by address:
 Call:
-$yahoo->searchByAddress('Hole&#269;kova 32','Praha','Czech republic')
+$yahoo->searchByAddress('Holečkova 32','Praha','Czech republic')
 Return:
 <?php
-print_r($yahoo->searchByAddress('Hole&#269;kova 32','Praha','Czech republic'));
+print_r($yahoo->searchByAddress('Holečkova 32','Praha','Czech republic'));
 ?>
 </pre>
 
@@ -55,10 +47,10 @@ print_r($yahoo->searchByLocation('50.073274','14.392619'));
 <p><strong>Search by Google Maps API service:</strong></p>
 <pre>Search by address:
 Call:
-$google->searchByAddress('Hole&#269;kova 32','Praha','Czech republic')
+$google->searchByAddress('Holečkova 32','Praha','Czech republic')
 Return:
 <?php
-print_r($google->searchByAddress('Hole&#269;kova 32','Praha','Czech republic'));
+print_r($google->searchByAddress('Holečkova 32','Praha','Czech republic'));
 ?>
 </pre>
 
@@ -68,7 +60,6 @@ $google->searchByLocation('50.073274','14.392619')
 Return:
 <?php
 print_r($google->searchByLocation('50.073274','14.392619'));
-
 ?>
 </pre>
 </body>
