@@ -41,7 +41,7 @@ class GoogleGeoLocator extends GeoLocator {
 	protected function searchByParam($paramVal, $paramName) {
 		$url = sprintf(self::serviceAddress, $paramName, $paramVal, $this->language);
 		if(!is_null($this->apiKey))
-			$url .= '&client=' . $this->apiKey;
+			$url .= '&key=' . $this->apiKey;
 
         $file = $this->getUrl($url);
 		$doc = json_decode($file);
