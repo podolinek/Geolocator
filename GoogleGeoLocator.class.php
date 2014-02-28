@@ -76,7 +76,9 @@ class GoogleGeoLocator extends GeoLocator {
 			$results['count'] = $i;
 
 		} else
-			$results['error'] = $status.': '.$doc->error_message;
+			$results['error'] = $status;
+			if(isset($doc->error_message))
+                		$results['error'] .= ': '.$doc->error_message;
 		return $results;
 	}
 	
