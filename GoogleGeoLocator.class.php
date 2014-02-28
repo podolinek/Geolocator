@@ -75,10 +75,11 @@ class GoogleGeoLocator extends GeoLocator {
 			}
 			$results['count'] = $i;
 
-		} else
+		} else {
 			$results['error'] = $status;
 			if(isset($doc->error_message))
                 		$results['error'] .= ': '.$doc->error_message;
+		}
 		return $results;
 	}
 	
